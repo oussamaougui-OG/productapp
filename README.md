@@ -19,7 +19,7 @@ L'entité `Product` possède les attributs suivants :
 
 Les annotations Lombok (`@Data`, `@Builder`, `@NoArgsConstructor`, `@AllArgsConstructor`) évitent d'écrire les getters, setters et constructeurs.
 
-![Classe Product](<img width="290" height="302" alt="product" src="https://github.com/user-attachments/assets/131cf9d6-3900-4975-9088-f03794462ab4" />
+![Classe Product](product.png
 )
 
 ### Étape 4 : Configuration de l'unité de persistance
