@@ -40,6 +40,9 @@ public class ProductappApplication {
                 System.out.println("=== Après mise à jour ===");
                 System.out.println(productRepository.findById(1L).orElse(null));
             }
+            productRepository.deleteById(2L);
+            System.out.println("=== Après suppression de id=2 ===");
+            productRepository.findAll().forEach(System.out::println);
 
         };
     }
