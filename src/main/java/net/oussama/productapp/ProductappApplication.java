@@ -33,6 +33,13 @@ public class ProductappApplication {
 
             System.out.println("=== Prix > 1000 ===");
             productRepository.findByPriceGreaterThan(1000).forEach(System.out::println);
+            if (p != null) {
+                p.setPrice(7500);
+                p.setQuantity(8);
+                productRepository.save(p);
+                System.out.println("=== Après mise à jour ===");
+                System.out.println(productRepository.findById(1L).orElse(null));
+            }
 
         };
     }
