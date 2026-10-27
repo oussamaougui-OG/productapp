@@ -21,6 +21,8 @@ public class ProductappApplication {
             productRepository.save(Product.builder().name("Imprimante").price(1500).quantity(5).build());
             productRepository.save(Product.builder().name("Souris").price(120).quantity(50).build());
             System.out.println("=== Produits ajoutés ===");
+            System.out.println("=== Tous les produits ===");
+            productRepository.findAll().forEach(System.out::println);
         };
     }
 }
