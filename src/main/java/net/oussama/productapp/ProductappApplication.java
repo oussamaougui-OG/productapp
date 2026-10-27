@@ -28,6 +28,11 @@ public class ProductappApplication {
             if (p != null) {
                 System.out.println(p);
             }
+            System.out.println("=== Recherche par nom contenant 'o' ===");
+            productRepository.findByNameContainsIgnoreCase("o").forEach(System.out::println);
+
+            System.out.println("=== Prix > 1000 ===");
+            productRepository.findByPriceGreaterThan(1000).forEach(System.out::println);
 
         };
     }
