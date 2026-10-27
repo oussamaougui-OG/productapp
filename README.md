@@ -28,7 +28,7 @@ Dans `application.properties` :
 - `spring.jpa.hibernate.ddl-auto=create-drop`
 - `spring.jpa.show-sql=true`
 
-![application.properties](docs/images/application-properties.png)
+![application.properties](application-properties.png)
 
 ### Étape 5 : Création du repository
 L'interface `ProductRepository` étend `JpaRepository<Product, Long>` et ajoute deux méthodes de recherche :
@@ -37,7 +37,7 @@ L'interface `ProductRepository` étend `JpaRepository<Product, Long>` et ajoute 
 
 Spring Data génère l'implémentation à partir du nom des méthodes.
 
-![ProductRepository](docs/images/product-repository.png)
+![ProductRepository](product-repository.png)
 
 ### Étape 6 : Test des opérations
 Un `CommandLineRunner` exécute au démarrage les opérations suivantes :
@@ -48,7 +48,7 @@ Un `CommandLineRunner` exécute au démarrage les opérations suivantes :
 - mise à jour d'un produit
 - suppression d'un produit
 
-![Console](docs/images/console.png)
+![Console](console.png)
 
 ## Résultat
 
@@ -58,7 +58,7 @@ La console affiche les trois produits ajoutés, puis l'ordinateur mis à jour (p
 
 Un commit et un push ont été effectués à chaque étape.
 
-![Historique des commits](docs/images/commits.png)
+![Historique des commits](commits.png)
 
 ## Conclusion
 
